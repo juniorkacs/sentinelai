@@ -1,0 +1,58 @@
+[
+  {
+    "model": "robust_baseline",
+    "threshold": 4.5603,
+    "test_minutes": 10080,
+    "anomalous_minutes": 389,
+    "precision": 0.963,
+    "recall": 0.928,
+    "f1": 0.945,
+    "average_precision": 0.975,
+    "roc_auc": 0.997,
+    "episodes": 13,
+    "episodes_detected": 13,
+    "event_recall": 1.0,
+    "median_detection_delay_min": 0.0,
+    "alerts": 30,
+    "false_alerts": 14,
+    "false_alerts_per_day": 2.0,
+    "recall_by_type": {
+      "auth_bruteforce": 1.0,
+      "cpu_runaway": 1.0,
+      "error_burst": 1.0,
+      "exfiltration_pattern": 1.0,
+      "latency_degradation": 1.0,
+      "memory_leak": 1.0,
+      "subtle_multi_metric": 1.0,
+      "traffic_drop": 1.0
+    }
+  },
+  {
+    "model": "isolation_forest",
+    "threshold": 0.5197,
+    "test_minutes": 10080,
+    "anomalous_minutes": 389,
+    "precision": 0.711,
+    "recall": 0.905,
+    "f1": 0.796,
+    "average_precision": 0.866,
+    "roc_auc": 0.993,
+    "episodes": 13,
+    "episodes_detected": 13,
+    "event_recall": 1.0,
+    "median_detection_delay_min": 0.0,
+    "alerts": 137,
+    "false_alerts": 123,
+    "false_alerts_per_day": 17.57,
+    "recall_by_type": {
+      "auth_bruteforce": 1.0,
+      "cpu_runaway": 1.0,
+      "error_burst": 1.0,
+      "exfiltration_pattern": 1.0,
+      "latency_degradation": 1.0,
+      "memory_leak": 1.0,
+      "subtle_multi_metric": 1.0,
+      "traffic_drop": 1.0
+    }
+  }
+]

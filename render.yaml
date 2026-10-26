@@ -1,0 +1,7 @@
+# Render Blueprint: dashboard and API. Models train from seeded data at start-up.
+services:
+  - type: web
+    name: sentinelai
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
